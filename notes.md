@@ -1,5 +1,15 @@
 # Análise Exploratória de Dados (EDA) para identificar padrões de cancelamento (churn)
 
+# Contexto
+Uma empresa de telecomunicações percebeu que parte de seus clientes está cancelando seus serviços. A diretoria considera utilizar Machine Learning no futuro para identificar clientes com maior risco de cancelamento.
+
+- 1: Entendimento do Negócio (O que é o churn e os objetivos).
+- 2: Entendimento dos Dados (Olhar os tipos, nulos ou duplicados).
+- 3: Preparação dos Dados (Converter e ajustar). - **Talvez ajustar**
+- 4: Criar os gráficos para achar os 3 insights e 3 hipóteses.
+- 5: Data Readiness, avaliando se o dado está pronto para o modelo no futuro.
+- 6: video
+
 ## Data: 
 
 Data columns (total 21 colunas / 7043 linhas):
