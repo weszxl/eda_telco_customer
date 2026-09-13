@@ -47,7 +47,7 @@ Data columns (total 21 colunas / 7043 linhas):
 - 'TotalCharges' tem espaço vazio no lugar do zero, e float não pode ter espaço vazio, tem que ajustar | tem valor em branco, pois clientes novos (tenure) recebem valor 0, em string vira espaço
 - 'Churn' o principal, tem que virar int ou category (ajustado pra 0 e 1) pra calcular a tax de cancelamento
 
-## A considerar
+## A considerar (nem precisa sipa)
 - remoção da coluna 'customerID' por conta de overfitting (llm alucina por causa do formato do ID :D) ou transformar em index
 - 'SeniorCitizen' está como int64, implicaria na criação de gráficos? (uma função antes de processar deve resolver)
 - - - transformar em category do pandas e ajustar para sim ou não? (não faz sentido calcular idoso - vai tirar média de 0 e 1? mangolão)
