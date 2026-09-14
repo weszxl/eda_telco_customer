@@ -39,18 +39,34 @@ Data columns (total 21 colunas / 7043 linhas):
 
 ## Coisas boas
 -- Sem dados nulos :D / mas tem valores em branco :c
--- Sem dados duplicados :D
--- 
+-- Sem dados duplicados :D 
+-- Sem duplicidade na capitalização
 
 ## Problemas que devem ser resolvidos
-- 'TotalCharges' está como string, mas deveria ser float (string não soma, só na merda do python)
+- 'TotalCharges' está como string, mas deveria ser float
 - 'TotalCharges' tem espaço vazio no lugar do zero, e float não pode ter espaço vazio, tem que ajustar | tem valor em branco, pois clientes novos (tenure) recebem valor 0, em string vira espaço
-- 'Churn' o principal, tem que virar int ou category (ajustado pra 0 e 1) pra calcular a tax de cancelamento
 
-## A considerar (nem precisa sipa)
-- remoção da coluna 'customerID' por conta de overfitting (llm alucina por causa do formato do ID :D) ou transformar em index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## A considerar (nem precisa)
+- remoção da coluna 'customerID' por conta de overfitting, ou transformar em index
 - 'SeniorCitizen' está como int64, implicaria na criação de gráficos? (uma função antes de processar deve resolver)
-- - - transformar em category do pandas e ajustar para sim ou não? (não faz sentido calcular idoso - vai tirar média de 0 e 1? mangolão)
-- 'gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', viram caregory (um monte de yes ou no fica foda pea máquina)
+- - - transformar em category do pandas e ajustar para sim ou não?
+- 'gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', viram caregory (um monte de yes ou no, vira 0 e 1)
 
 ## 
