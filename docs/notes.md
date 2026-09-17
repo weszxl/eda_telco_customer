@@ -41,16 +41,29 @@ Data columns (total 21 colunas / 7043 linhas):
  19  TotalCharges      7043 non-null   str          **O valor total cobrado do cliente até o momento**
  20  Churn             7043 non-null   str          **Se o cliente cancelou o serviço (Yes/No)**    
 
+
+
+# Métricas (data.describe())
+- Total de Registros (count): 7.043 clientes em todas as colunas (sem valores nulos)
+- Idosos (SeniorCitizen): 16,2% da base é composta por idosos (mean = 0.16)
+- Tempo de Casa (tenure): Média de 32 meses, com metade dos clientes (50%) até 29 meses e o máximo de 72 meses (6 anos)
+- Mensalidade (MonthlyCharges): Média de R$ 64,76, variando entre R$ 18,25 e R$ 118,75
+- Gasto Total (TotalCharges): Média acumulada de R$ 2.281,92, chegando ao máximo de R$ 8.684,80
+
+# data.describe(include='all')
+- A maior parte  dos clientes é masculino (Male), não tem parceiro (No), não tem dependentes (No), possui serviço de telefone (Yes), não tem múltiplas linhas (No) e usa internet de fibra óptica (Fiber optic)
+- Categoria que mais se repetiu: Male (3.555 homens). Serviço de telefone ativo (Yes) (6.361 clientes)
+
 ## Coisas boas
 -- Sem dados nulos :D / mas tem valores em branco :c
 -- Sem dados duplicados :D 
 -- Sem duplicidade na capitalização
 
-## Problemas que devem ser resolvidos
+## Problemas que devem ser resolvidos --- (Tá feito)
 - 'TotalCharges' está como string, mas deveria ser float
 - 'TotalCharges' tem espaço vazio no lugar do zero, e float não pode ter espaço vazio, tem que ajustar | tem valor em branco, pois clientes novos (tenure) recebem valor 0, em string vira espaço
 
-
+## 
 
 
 
