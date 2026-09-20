@@ -63,7 +63,7 @@ Data columns (total 21 colunas / 7043 linhas):
 - 'TotalCharges' está como string, mas deveria ser float
 - 'TotalCharges' tem espaço vazio no lugar do zero, e float não pode ter espaço vazio, tem que ajustar | tem valor em branco, pois clientes novos (tenure) recebem valor 0, em string vira espaço
 
-## 
+## churn
 
 
 
